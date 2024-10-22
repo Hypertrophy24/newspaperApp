@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "crispy_forms",
+    "crispy_bootstrap5",
     "accounts",
+    "pages",
 ]
 
 MIDDLEWARE = [
@@ -119,6 +122,9 @@ USE_TZ = True
 STATIC_URL = "static/"
 LOGIN_REDIRECT_URL = "home"
 AUTH_USER_MODEL = "accounts.CustomUser"
+
+CRISPY_ALLOWED_TEMPLATE_PACK ="bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
